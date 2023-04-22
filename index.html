@@ -16,10 +16,12 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="./main.js" defer></script>
     <title>Home</title>
   </head>
   <body>
-    <nav>
+
+    <nav class="nav-left">
       <a href="#home"><i class="fa-solid fa-house"></i></a>
       <a target="_blank" href="https://github.com/gs92dev"
         ><i class="fa-brands fa-square-github"></i
@@ -30,21 +32,93 @@
       <a target="_blank" href="mailto: gs92dev@gmail.com"
         ><i class="fa-solid fa-envelope"></i
       ></a>
-      <a href="#projects"><i class="fa-solid fa-list-check"></i></a>
     </nav>
-    <main>
-      <section class="intro" id="home">
-        <p class="name">Welcome to the Guilherme World!</p>
 
-        <p class="intro-text">
-          Welcome to the web page of an inspiring civil-
-          engineer-turned-full-stack-web-developer! This page tells how one
-          individual took their passion for problem-solving and applied it to a
-          new field.
+    <main>
+      <header>
+        <section class="intro" id="home">
+          <p class="name">Welcome to Guilherme World!</p>
+          <nav class="nav-top">
+            <ul class="nav-ul_top">
+              <li><a href="#about">About me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="">Experience</a></li>
+              <li><a href="">Projects</a></li>
+            </ul>
+          </nav>
+
+          <p class="intro-text">
+            I am Guilherme dos Santos. Welcome to the web page of an inspiring
+            civil- engineer-turned-full-stack-web-developer! This page tells how
+            one individual took their passion for problem-solving and applied it
+            to a new field.
+          </p>
+        </section>
+      </header>
+      <section class="about" id="about">
+        <h2>About me</h2>
+        <p>
+         I am a proud native of Sao Paulo, Brazil. I have always had a passion for technology and pursued my interest in the field by studying mechanical and electronics engineering. In 2015, I earned my degree in civil engineering and went on to work as a technician at the railway in Sao Paulo for over a decade.
+
+          However, my thirst for knowledge and love for technology never waned. In 2022, I decided to expand my skillset and studied cloud computing, earning a certification in AWS Cloud Practitioner. This experience further ignited my curiosity and interest in the technology industry, leading me to pursue web development full-stack.
+          
+          Currently, I am in the process of completing my certificate in web development full-stack, and I am thrilled to embark on a new career path. With my diverse background in engineering and technical experience in cloud computing, I am confident in my ability to provide innovative and creative solutions in web development.
+          
+          I am excited to use my skills and knowledge to contribute to the growth and success of my future employers. Thank you for visiting my website, and I look forward to connecting with you soon!
         </p>
       </section>
+      <section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <ul class="ul-skills">
+          <li>
+            <img
+              src="./assets/img/001-html5.png"
+              alt="HTML5"
+              class="img-skills"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/img/002-css-3.png"
+              alt="CSS"
+              class="img-skills"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/img/003-java-script.png"
+              alt="JavaScript"
+              class="img-skills"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/img/bootstrap.png"
+              alt="Bootstrap"
+              class="img-skills"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/img/005-react.png"
+              alt="React"
+              class="img-skills"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/img/004-java.png"
+              alt="Java"
+              class="img-skills"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="Experience">
+
+      </section>
       <section class="projects" id="projects">
-        <h1>My projects</h1>
+        <h2>Projects</h2>
         <div class="container-card">
           <div class="cards">
             <img src="./assets/img/fruta.jpg" alt="" />
