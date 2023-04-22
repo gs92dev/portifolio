@@ -1,6 +1,103 @@
 *{
+    box-sizing: border-box;
+    font-size: 16px;
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    color: red;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    align-items: center;
+    background-color:#B9EDDD ;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    width: 6%;
+    z-index: 1;
+    padding-top: 100px;
+    color: black;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+nav i{
+    font-size:3rem;
+    color: none;
+    text-decoration: none;
+    color: black;
+    transition: font-size 500ms;
+}
+nav i:hover {
+    font-size: 5rem;
+}
+.intro{
+    align-items: center;
+    background-color: #577D86;
+    color: #f5f5f5;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 25rem;
+    justify-content: center;
+    padding-left: 6%;
+  
+}
+.name{
+    align-self:start;
+    font-size: 4rem;
+    grid-column: 1/2;
+    margin: 10%;
+    width: 70%;
+}
+
+.intro-text{
+    align-self: end;
+    font-size: 40px;
+    grid-column: 2 / 3;
+    margin: 4% 15% 5% 0;
+}
+.projects{
+   background-color: #569DAA;
+   height: fit-content;
+   justify-content: center;
+   padding-left: 6%;
+}
+h1{    
+    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    padding-top: 2%;
+    text-align: center;
+}
+.container-card{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5%;
+    justify-content: center;
+    padding: 3% 2% 2% 2%;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 347px;
+    padding-top: 3%;
+}
+.link-card{
+    background-color: #B9EDDD;
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 2% 2% 2%;
+
+}
+.link-card a{ 
+
+    background-color: #577D86;
+    border-radius: 7rem;
+    color: rgb(250, 249, 249);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    width: 8ch;
+}
+.link-card a:hover{
+    width: 10ch;
+    height: 1.5rem;
 }
