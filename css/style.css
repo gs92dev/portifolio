@@ -27,13 +27,17 @@
     text-decoration: none;
     color: black;
     transition: font-size 500ms;
+    
 }
 .nav-left i:hover {
     font-size: 3rem;
 }
-.nav-top{
+.nav-top{ 
     align-self: start;
     padding: 1.5rem;
+    background-color: rgba(36, 84, 82, 0.7);
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 .nav-ul_top{
     display: flex;
@@ -47,6 +51,10 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
+    transition: font-size 2s;
+}
+.nav-ul_top li a:hover{
+    font-size: 2rem;
 }
 .intro{
     align-items: center;
@@ -78,9 +86,8 @@
 .about{
     background-image: linear-gradient(rgba(41, 67, 61, 0.75), rgba(30, 114, 110, 0.8)),
     url('../assets/img/saoPaulo.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     color: #f5f5f5;
     padding-left: 4%;
@@ -94,7 +101,7 @@
     padding-top: 10%;
 }
 .skills{
-    background-color:  rgba(36, 84, 82, 0.7);
+    background-color:  rgba(18, 106, 103, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -116,13 +123,6 @@
     width: 10rem;
     height: 10rem;
 }
-
-.projects{
-   background-color: rgba(57, 130, 127, 0.7);
-   height: fit-content;
-   justify-content: center;
-
-}
 h2{    
     color: #f5f5f5;
     font-family: 'Roboto', sans-serif;
@@ -130,7 +130,54 @@ h2{
     padding-top: 2%;
     text-align: center;
 }
+.experience{
 
+    background-color: rgba(34, 76, 75, 0.9);
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    padding-bottom: 5%
+}
+.experience-container1{
+    display: flex;
+    flex-flow: row wrap; ;
+    justify-content: space-between;
+    height: 25%;
+}
+.experience-container2{
+    display: flex;
+    flex-flow: row wrap; ;
+    justify-content: center;
+    height: 25%;
+}
+.experience-container3{
+    display: flex;
+    flex-flow: row wrap; ;
+    justify-content: space-between;
+    height: 25%;
+}
+.experience-card{
+    align-items: center;
+    background-color: rgba(57, 130, 127, 0.7);
+    color: #f5f5f5;
+    display: flex;
+    flex-flow: column wrap;
+    height: 300px;
+    justify-content: space-around;
+    line-height: 3ch;
+    padding: 4px;
+    width: 33%;  
+}
+li{
+    list-style: none;
+}
+.projects{
+    background-color: rgba(36, 84, 82, 0.7);
+    height: fit-content;
+    justify-content: center;
+ 
+ }
 .container-card{
     display: flex;
     flex-flow: row wrap;
@@ -159,41 +206,87 @@ h2{
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    width: 8ch;
     transition: width 500ms;
+    width: 8ch;
 }
 .link-card a:hover{
     width: 10ch;
 
 }
+footer{
+    background-color: rgba(34, 76, 75, 0.9);
+    color: #f5f5f5;
+    height: 50px;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
 
 @media only screen and (max-width: 600px) {
-    nav{   
+    .nav-left{ 
+        color: black;
         display:flex;
         flex-direction: row;
-        height: 6%;
-        position: fixed;
-        width: 100%;
-        color: black;
         font-size: 1rem;
+        height: 6%;
+        left: 0;
+        padding-bottom: 10px;
         padding-top: 2%;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
-    nav i{
-        font-size:1rem;
+    .nav-left i{
+        color: black;
+        color: none;
+        font-size:2rem;
+        text-decoration: none;
+        transition: font-size 500ms;
+        
+    }
+    .nav-left i:hover {
+        font-size: 2rem;
+    }
+
+    .nav-top{ 
+        background-color: rgba(36, 84, 82, 0.7);
+        display: flex;
+        padding: 1.5rem;
+        top: 0px;
+        width: 100%;
+    }
+    .nav-ul_top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style: none;
+        width: 100%;
+    
+    }
+    .nav-ul_top li a{
+        color: #f5f5f5;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: font-size 2s;
+        width: 100%;
+    }
+    .nav-ul_top li a:hover{
+        font-size: 2rem;
     }
     main{
     padding-top: 10%;
     padding-left: 0;
+    width: 100%;
     }
 
     .intro{
-        align-items: center;
+        align-items: center;   
         background-color: #577D86;
         color: #f5f5f5;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;    
+        justify-content: space-around;
       
     }
     .name{
@@ -210,11 +303,63 @@ h2{
         padding-left: 7%;
     }
     .about{
-        background-color: #569DAA;    
+        background-image: linear-gradient(rgba(41, 67, 61, 0.75), rgba(30, 114, 110, 0.8)),
+        url('../assets/img/saoPaulo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: fit-content;
         color: #f5f5f5;
+        padding-left: 0;
         padding-bottom: 2rem;
+        font-size: 0.5rem;
     }
     h2{
         font-size: 1.5rem;
+    }
+    .skills{
+        background-color:  rgba(18, 106, 103, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+    
+    }
+    .ul-skills{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0px;
+        padding: 20px 10px 20px 10px;
+    }
+    .ul-skills li{
+        padding: 0px;
+    }
+    .img-skills{
+        width: 3rem;
+        height: 3rem;
+    }
+    .experience{
+        width: 100%;
+        padding: 0;
+    }
+    .experience-container1, .experience-container2, .experience-container3{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+    .experience-container1, .experience-container3{
+        gap: 15px;
+    }
+    .experience-card{     
+
+     height: 300px;
+     justify-content: space-around;
+     line-height: 3ch;
+     padding: 5%;
+     width: 100%;
+      
     }
 }
