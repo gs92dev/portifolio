@@ -355,7 +355,7 @@ footer{
     }
     .experience-card{     
 
-     height: 300px;
+     height: fit-content;
      justify-content: space-around;
      line-height: 3ch;
      padding: 5%;
