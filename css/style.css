@@ -222,15 +222,15 @@ footer{
     text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 855px) {
     .nav-left{ 
         color: black;
-        display:flex;
+        display: flex;
         flex-direction: row;
         font-size: 1rem;
-        height: 6%;
+        height: 3rem;
         left: 0;
-        padding-bottom: 10px;
+        padding-bottom: 4px;
         padding-top: 2%;
         position: fixed;
         top: 0;
@@ -275,7 +275,7 @@ footer{
         font-size: 2rem;
     }
     main{
-    padding-top: 10%;
+    padding-top: 5%;
     padding-left: 0;
     width: 100%;
     }
@@ -287,6 +287,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        padding-top: 15px;
       
     }
     .name{
@@ -312,6 +313,13 @@ footer{
         padding-left: 0;
         padding-bottom: 2rem;
         font-size: 0.5rem;
+    }
+    .about p {
+        font-size: 1rem;
+        line-height: 3ch;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-top: 10%;
     }
     h2{
         font-size: 1.5rem;
@@ -362,4 +370,5 @@ footer{
      width: 100%;
       
     }
+
 }
