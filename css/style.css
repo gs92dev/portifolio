@@ -41,6 +41,7 @@
     background-color: rgba(36, 84, 82, 0.7);
     grid-column: 2/3;
     grid-row: 1/2;
+    box-shadow: 0 0 14px 3px black;
 }
 .nav-ul_top{
     display: flex;
@@ -54,10 +55,13 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
-    transition: font-size 2s;
+    transition: font-size 3s;
+  
+   
 }
 .nav-ul_top li a:hover{
-    font-size: 2rem;
+    font-size: 2rem;    
+    border-bottom:3px solid #e1e4e9;
 }
 
 .intro{
@@ -107,6 +111,7 @@
     justify-self: center;
     border-radius: 20px;
     box-shadow: inset 0 0 5px 2px #282a2d;
+    align-self: center;
 }
 .about{
     background-image: linear-gradient(rgba(41, 67, 61, 0.75), rgba(30, 114, 110, 0.8)),
@@ -126,7 +131,7 @@
     padding-top: 10%;
 }
 .skills{
-    background-color:  rgba(18, 106, 103, 0.7);
+    background-color: rgba(217, 234, 233, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -149,7 +154,7 @@
     height: 10rem;
 }
 h2{    
-    color: #f5f5f5;
+    color: rgb(24, 88, 88);
     font-family: 'Roboto', sans-serif;
     font-size: 4rem;
     padding-top: 2%;
@@ -157,14 +162,14 @@ h2{
 }
 .experience{
 
-    background-color: rgba(34, 76, 75, 0.9);
+    background-color: rgba(78, 158, 156, 0.9);
     padding-left: 5%;
     display: flex;
     flex-direction: column;
     padding-right: 5px;
     padding-bottom: 5%
 }
-.experience-container1{
+.experience-container-odd{
     display: flex;
     flex-flow: row wrap; ;
     justify-content: space-between;
@@ -176,11 +181,9 @@ h2{
     justify-content: center;
     height: 25%;
 }
-.experience-container3{
-    display: flex;
-    flex-flow: row wrap; ;
-    justify-content: space-between;
-    height: 25%;
+
+.tile-dark-background{
+    color: #f5f5f5;
 }
 .experience-card{
     align-items: center;
@@ -198,7 +201,7 @@ li{
     list-style: none;
 }
 .projects{
-    background-color: rgba(36, 84, 82, 0.7);
+    background-color: rgba(217, 234, 233, 0.7);
     height: fit-content;
     justify-content: center;
  
@@ -414,4 +417,5 @@ footer{
         border-radius: 20px;
         box-shadow: inset 0 0 5px 2px #282a2d;
         padding-bottom: 4px;
+       
 }}
