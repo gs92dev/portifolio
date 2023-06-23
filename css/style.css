@@ -183,7 +183,7 @@ h2{
 }
 
 .tile-dark-background{
-    rgb(24, 88, 88);
+    color: rgb(24, 88, 88);
 }
 .experience-card{
     align-items: center;
