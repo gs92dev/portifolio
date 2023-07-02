@@ -1,14 +1,16 @@
-*{
+* {
     box-sizing: border-box;
     font-size: 16px;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-:root{
-    --light-bg-color:  rgba(217, 234, 233, 0.7);
+
+:root {
+    --light-bg-color: rgba(217, 234, 233, 0.7);
 }
-.nav-left{ 
+
+.nav-left {
     align-items: center;
     background-color: #B9EDDD;
     color: black;
@@ -24,21 +26,24 @@
     z-index: 1;
     box-shadow: 0 0 14px 3px black;
 }
-.nav-left i{
-    font-size:2rem;
+
+.nav-left i {
+    font-size: 2rem;
     color: none;
     text-decoration: none;
     color: black;
     transition: font-size 500ms;
     transition: text-decoration 500ms;
-    
+
 }
+
 .nav-left i:hover {
     font-size: 3rem;
     text-decoration: underline;
     transition: text-decoration 500ms;
 }
-.nav-top{ 
+
+.nav-top {
     align-self: start;
     padding: 1.5rem;
     background-color: rgba(36, 84, 82, 0.7);
@@ -46,41 +51,44 @@
     grid-row: 1/2;
     box-shadow: 0 0 14px 3px black;
 }
-.nav-ul_top{
+
+.nav-ul_top {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
 
 }
-.nav-ul_top li a{
+
+.nav-ul_top li a {
     color: #f5f5f5;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
     transition: font-size 3s;
-  
-   
-}
-.nav-ul_top li a:hover{
-    font-size: 2rem;    
-    border-bottom:3px solid #e1e4e9;
+
+
 }
 
-.intro{
+.nav-ul_top li a:hover {
+    font-size: 2rem;
+    border-bottom: 3px solid #e1e4e9;
+}
+
+.intro {
     align-items: center;
-    background-color: var(--light-bg-color); 
+    background-color: var(--light-bg-color);
     color: #f5f5f5;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 50vh 50vh;
     justify-content: center;
-    height: 100vh;  
+    height: 100vh;
 }
 
-.name{
-    align-self:start;
-    font-size: 4rem;
+.name {
+    align-self: start;
+    font-size: 3rem;
     grid-column: 1/2;
     grid-row: 1/3;
     margin: 10%;
@@ -89,12 +97,13 @@
     color: rgb(24, 88, 88);
     transition: all 5s;
 }
-.name:hover{
+
+.name:hover {
     transition: all 5s;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-.intro-text{
+.intro-text {
     align-self: end;
     font-size: 40px;
     grid-column: 2 / 3;
@@ -102,7 +111,7 @@
     color: rgb(24, 88, 88);
 }
 
-.img-intro{
+.img-intro {
     background-image: url(../assets/img/Guilherme.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,9 +125,10 @@
     box-shadow: inset 0 0 5px 2px #282a2d;
     align-self: center;
 }
-.about{
+
+.about {
     background-image: linear-gradient(rgba(41, 67, 61, 0.75), rgba(30, 114, 110, 0.8)),
-    url('../assets/img/saoPaulo.jpg');
+        url('../assets/img/saoPaulo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -126,22 +136,24 @@
     padding-left: 4%;
     padding-bottom: 2rem;
 }
-.about p{
-    font-size: 1.5rem;
+
+.about p {
+    font-size: 1.3rem;
     line-height: 3ch;
-    padding-left: 3rem;
-    padding-right: 4rem;
-    padding-top: 10%;
+    padding: 8px 4rem 0 3rem;
+  
 }
-.skills{
-    background-color: var(--light-bg-color); 
+
+.skills {
+    background-color: var(--light-bg-color);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 1rem 0 3rem 2rem;
 
 }
-.ul-skills{
+
+.ul-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 75px;
@@ -149,21 +161,25 @@
     list-style: none;
     justify-content: space-around;
 }
-.ul-skills li{
+
+.ul-skills li {
     padding: 1rem 7% 2% 7%;
 }
-.img-skills{
+
+.img-skills {
     width: 10rem;
     height: 10rem;
 }
-h2{    
+
+h2 {
     color: rgb(24, 88, 88);
     font-family: 'Roboto', sans-serif;
     font-size: 4rem;
     padding-top: 2%;
     text-align: center;
 }
-.experience{
+
+.experience {
 
     background-color: #B9EDDD;
     padding-left: 5%;
@@ -172,23 +188,28 @@ h2{
     padding-right: 5px;
     padding-bottom: 5%
 }
-.experience-container-odd{
+
+.experience-container-odd {
     display: flex;
-    flex-flow: row wrap; ;
+    flex-flow: row wrap;
+    ;
     justify-content: space-between;
     height: 25%;
 }
-.experience-container2{
+
+.experience-container2 {
     display: flex;
-    flex-flow: row wrap; ;
+    flex-flow: row wrap;
+    ;
     justify-content: center;
     height: 25%;
 }
 
-.tile-dark-background{
-    color: rgb(24, 88, 88);
+.title-light {
+    color: #f5f5f5;
 }
-.experience-card{
+
+.experience-card {
     align-items: center;
     background-color: rgba(57, 130, 127, 0.7);
     color: #f5f5f5;
@@ -198,38 +219,44 @@ h2{
     justify-content: space-around;
     line-height: 3ch;
     padding: 4px;
-    width: 33%;  
+    width: 33%;
 }
-li{
+
+li {
     list-style: none;
 }
-.projects{
-    background-color: var(--light-bg-color); 
+
+.projects {
+    background-color: var(--light-bg-color);
     height: fit-content;
     justify-content: center;
- 
- }
-.container-card{
+
+}
+
+.container-card {
     display: flex;
     flex-flow: row wrap;
     gap: 5%;
     justify-content: center;
     padding: 3% 2% 2% 2%;
 }
-.cards{
+
+.cards {
     display: flex;
     flex-direction: column;
     width: 347px;
     padding-top: 3%;
 }
-.link-card{
+
+.link-card {
     background-color: #B9EDDD;
     display: flex;
     justify-content: space-around;
     padding: 3% 2% 2% 2%;
 
 }
-.link-card a{ 
+
+.link-card a {
 
     background-color: #577D86;
     border-radius: 2px;
@@ -241,11 +268,13 @@ li{
     width: 8ch;
     padding: 4px;
 }
-.link-card a:hover{
+
+.link-card a:hover {
     width: 10ch;
 
 }
-footer{
+
+footer {
     background-color: rgba(34, 76, 75, 0.9);
     color: #f5f5f5;
     height: 50px;
@@ -253,14 +282,15 @@ footer{
     padding: 10px;
     text-align: center;
 }
-iframe{
+
+iframe {
     width: 347px;
     height: 315px;
-    
+
 }
 
 @media only screen and (max-width: 855px) {
-    .nav-left{ 
+    .nav-left {
         color: black;
         display: flex;
         flex-direction: row;
@@ -273,37 +303,42 @@ iframe{
         top: 0;
         width: 100%;
     }
-    .nav-left i{
+
+    .nav-left i {
         color: black;
         color: none;
-        font-size:2rem;
+        font-size: 2rem;
         text-decoration: none;
         transition: font-size 500ms;
-        
+
     }
+
     .nav-left i:hover {
         font-size: 2rem;
     }
 
-    .nav-top{ 
+    .nav-top {
         background-color: rgba(36, 84, 82, 0.7);
         display: flex;
         padding: 1.5rem;
         top: 0px;
         width: 100%;
     }
-    .img-intro{
+
+    .img-intro {
         display: none;
     }
-    .nav-ul_top{
+
+    .nav-ul_top {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         list-style: none;
         width: 100%;
-    
+
     }
-    .nav-ul_top li a{
+
+    .nav-ul_top li a {
         color: #f5f5f5;
         text-decoration: none;
         font-weight: bold;
@@ -311,41 +346,45 @@ iframe{
         transition: font-size 2s;
         width: 100%;
     }
-    .nav-ul_top li a:hover{
+
+    .nav-ul_top li a:hover {
         font-size: 2rem;
         text-decoration: solid black;
     }
-    main{
-    padding-top: 5%;
-    padding-left: 0;
-    width: 100%;
+
+    main {
+        padding-top: 5%;
+        padding-left: 0;
+        width: 100%;
     }
 
-    .intro{
-        align-items: center;    
+    .intro {
+        align-items: center;
         color: #f5f5f5;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding-top: 15px;
-      
+
     }
-    .name{
+
+    .name {
         font-size: 2rem;
         grid-column: 1/2;
         margin: 10%;
         width: 70%;
     }
-    
-    .intro-text{   
+
+    .intro-text {
         display: flex;
         justify-content: center;
         font-size: 1.2rem;
         padding-left: 7%;
     }
-    .about{
+
+    .about {
         background-image: linear-gradient(rgba(41, 67, 61, 0.75), rgba(30, 114, 110, 0.8)),
-        url('../assets/img/saoPaulo.jpg');
+            url('../assets/img/saoPaulo.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         height: fit-content;
@@ -354,25 +393,28 @@ iframe{
         padding-bottom: 2rem;
         font-size: 0.5rem;
     }
+
     .about p {
         font-size: 1rem;
-        line-height: 3ch;
-        padding-left: 1rem;
-        padding-right: 2rem;
-        padding-top: 10%;
+        line-height: 2ch;
+        padding: 10px 2rem 0 1rem;
+       
     }
-    h2{
+
+    h2 {
         font-size: 1.5rem;
     }
-    .skills{
-        background-color:  rgba(18, 106, 103, 0.7);
+
+    .skills {
+        background-color: rgba(18, 106, 103, 0.7);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding: 0;
-    
+
     }
-    .ul-skills{
+
+    .ul-skills {
         display: flex;
         flex-wrap: wrap;
         gap: 60px;
@@ -381,52 +423,65 @@ iframe{
         padding: 0px;
         padding: 20px 10px 20px 10px;
     }
-    .ul-skills li{
+
+    .ul-skills li {
         padding: 0px;
     }
-    .img-skills{
+
+    .img-skills {
         width: 3rem;
         height: 3rem;
     }
-    .experience{
+
+    .experience {
         width: 100%;
         padding: 0;
     }
-    .experience-container1, .experience-container2, .experience-container3{
+
+    .experience-container1,
+    .experience-container2,
+    .experience-container3 {
         display: flex;
         flex-direction: column;
         padding: 10px;
         width: 100%;
     }
-    .experience-container1, .experience-container3{
+
+    .experience-container1,
+    .experience-container3 {
         gap: 15px;
     }
-    .experience-card{     
 
-     height: fit-content;
-     justify-content: space-around;
-     line-height: 3ch;
-     padding: 5%;
-     width: 100%;
-      
-    }
-    .container-card{
+    .experience-card {
+
+        height: fit-content;
+        justify-content: space-around;
+        line-height: 3ch;
+        padding: 5%;
         width: 100%;
-        gap:0;
+
+    }
+
+    .container-card {
+        width: 100%;
+        gap: 0;
         padding: 0;
     }
-    .cards{
+
+    .cards {
         width: 100%;
     }
-    iframe{
+
+    iframe {
         width: 100%;
         height: 315px;
-        
+
     }
 
 }
-@media only screen and (min-height:930px){
-    .img-intro{
+
+@media only screen and (min-height:930px) {
+    .img-intro {
         background-image: url(../assets/img/Guilherme.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -439,5 +494,6 @@ iframe{
         border-radius: 20px;
         box-shadow: inset 0 0 5px 2px #282a2d;
         padding-bottom: 4px;
-       
-}}
+
+    }
+}
