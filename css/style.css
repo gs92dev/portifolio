@@ -141,7 +141,7 @@
     font-size: 1.3rem;
     line-height: 3ch;
     padding: 8px 4rem 0 3rem;
-  
+
 }
 
 .skills {
@@ -188,17 +188,21 @@
     padding-right: 5px;
     padding-bottom: 5%
 }
-.experience-date{
+
+.experience-date {
     margin: 16px;
 }
-.flex-row{
+
+.flex-row {
     display: flex;
     margin: 16px;
     justify-content: space-evenly;
 }
-.experiece-description{
+
+.experiece-description {
     width: 30%;
 }
+
 .experience-container-odd {
     display: flex;
     flex-flow: row wrap;
@@ -235,11 +239,34 @@
     padding: 4px;
     width: 33%;
 }
-.experience-date > p{
+
+.emphasis {
+    background-color: #dfede9;
+    padding: 6px;
+    color: rgb(24, 88, 88);
+}
+
+.experience-date>p {
     color: rgb(24, 88, 88);
     font-family: 'Roboto', sans-serif;
     font-weight: 450;
+    width: fit-content;
+
 }
+
+.none {
+    display: none;
+}
+
+.second {
+    position: relative;
+    top: 50px;
+}
+.third {
+    position: relative;
+    top: 120px;
+}
+
 li {
     list-style: none;
 }
@@ -416,7 +443,7 @@ iframe {
         font-size: 1rem;
         line-height: 2ch;
         padding: 10px 2rem 0 1rem;
-       
+
     }
 
     h2 {
