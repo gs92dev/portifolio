@@ -191,6 +191,14 @@
 .experience-date{
     margin: 16px;
 }
+.flex-row{
+    display: flex;
+    margin: 16px;
+    justify-content: space-evenly;
+}
+.experiece-description{
+    width: 30%;
+}
 .experience-container-odd {
     display: flex;
     flex-flow: row wrap;
@@ -227,7 +235,11 @@
     padding: 4px;
     width: 33%;
 }
-
+.experience-date > p{
+    color: rgb(24, 88, 88);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 450;
+}
 li {
     list-style: none;
 }
