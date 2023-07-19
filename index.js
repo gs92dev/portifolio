@@ -1,13 +1,28 @@
 console.log("Working");
 const first = document.getElementById("first");
 const second = document.getElementById("second");
+const firstExperience = document.getElementById("firstExperience");
+const secondExperience = document.getElementById("secondExperience");
 first.onmouseover = () => {
-  console.log("clicado");
+  firstExperience.classList.remove("none");
 };
 second.onmouseover = () => {
-    second.classList.add("emphasis");
-    console.log("clicado");
-  };
+  second.classList.add("emphasis");
+  secondExperience.classList.add("emphasis");
+  secondExperience.classList.remove("none");
+  first.classList.remove("emphasis");
+  firstExperience.remove("emphasis");
+};
 second.onmouseout = () => {
-    second.classList.remove("emphasis");
-}
+  second.classList.remove("emphasis");
+  secondExperience.classList.add("none");
+  secondExperience.classList.remove();
+};
+
+setInterval(() => {
+  first.classList.remove("emphasis");
+  firstExperience.classList.add("none");
+  second.classList.add("emphasis");
+  secondExperience.classList.add("emphasis");
+  secondExperience.classList.remove("none");
+}, 8000);
