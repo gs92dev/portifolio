@@ -19,10 +19,18 @@ second.onmouseout = () => {
   secondExperience.classList.remove();
 };
 
-setInterval(() => {
+/*setInterval(() => {
   first.classList.remove("emphasis");
   firstExperience.classList.add("none");
   second.classList.add("emphasis");
   secondExperience.classList.add("emphasis");
   secondExperience.classList.remove("none");
-}, 8000);
+}, 8000);*/
+let experience =[first, second]
+for (let index = 0; index < experience.length; index++) {
+  setInterval(() => {
+    experience[index].classList.add("emphasis");
+  }, 7000);
+  
+}
+
