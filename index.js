@@ -48,4 +48,5 @@ function timer() {
 setInterval(() => {
   timer();
 }, 5000);
+console.log("hahaha");
 //window.onload = timer();
