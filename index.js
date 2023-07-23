@@ -1,4 +1,4 @@
-console.log("Working");
+
 const first = document.getElementById("first");
 const second = document.getElementById("second");
 const third = document.getElementById("third");
@@ -51,5 +51,5 @@ function timer() {
 setInterval(() => {
   timer();
 }, 5000);
-console.log("hahaha");
+
 window.onload = timer();
