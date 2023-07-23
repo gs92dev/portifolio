@@ -313,7 +313,7 @@ li {
 .cards {
     display: flex;
     flex-direction: column;
-    width: 347px;
+    width: 500px;
     padding-top: 3%;
 }
 
@@ -353,8 +353,8 @@ footer {
 }
 
 iframe {
-    width: 347px;
-    height: 315px;
+    width: 500px;
+    height: 400px;
 
 }
 
