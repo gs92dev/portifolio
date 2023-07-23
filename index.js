@@ -11,30 +11,23 @@ const fourthExperience = document.getElementById("fourthExperience");
 const fifthExperience = document.getElementById("fifthExperience");
 //Array of nodes for each experience
 let experience = [first, second, third, fourth, fifth];
-let description = [firstExperience, secondExperience, thirdExperience, fourthExperience, fifthExperience];
+let description = [
+  firstExperience,
+  secondExperience,
+  thirdExperience,
+  fourthExperience,
+  fifthExperience,
+];
 
-first.onmouseover = () => {
-  firstExperience.classList.remove("none");
-};
-second.onmouseover = () => {
-  second.classList.add("emphasis");
-  secondExperience.classList.add("emphasis");
-  secondExperience.classList.remove("none");
-  first.classList.remove("emphasis");
-  firstExperience.remove("emphasis");
-};
-second.onmouseout = () => {
-  second.classList.remove("emphasis");
-  secondExperience.classList.add("none");
-  secondExperience.classList.remove();
-};
-experience.forEach(element => {
+experience.forEach(function call(element, index) {
   element.onmouseover = () => {
     element.classList.add("emphasis");
-  }
+    description[index].classList.remove("none");
+  };
   element.onmouseout = () => {
     element.classList.remove("emphasis");
-  }
+    description[index].classList.add("none");
+  };
 });
 //Timer function for each experience with 5 seconds fo delay
 let time = 0;
@@ -44,7 +37,7 @@ function timer() {
     description[time].classList.remove("none");
     if (time > 0) {
       experience[time - 1].classList.remove("emphasis");
-      description[time-1].classList.add("none");
+      description[time - 1].classList.add("none");
     }
     if (time == 0) {
       experience[4].classList.remove("emphasis");

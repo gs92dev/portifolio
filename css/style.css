@@ -3,11 +3,12 @@
     font-size: 16px;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: monospace;
 }
 
 :root {
     --light-bg-color: rgba(217, 234, 233, 0.7);
+    --font-green: color: rgb(24, 88, 88);
 }
 
 .nav-left {
@@ -45,11 +46,12 @@
 
 .nav-top {
     align-self: start;
-    padding: 1.5rem;
-    background-color: rgba(36, 84, 82, 0.7);
+    padding: 1.5rem; 
     grid-column: 2/3;
     grid-row: 1/2;
-    box-shadow: 0 0 14px 3px black;
+   /* box-shadow: 0 0 14px 3px black;*/
+   /*border-bottom: 0.2rem solid rgb(24, 88, 88);*/
+
 }
 
 .nav-ul_top {
@@ -61,18 +63,21 @@
 }
 
 .nav-ul_top li a {
-    color: #f5f5f5;
-    text-decoration: none;
-    font-weight: bold;
+
+    color:rgb(24, 88, 88) ;
+    font-family: monospace;
     font-size: 1.5rem;
+    text-decoration: none;    
     transition: font-size 3s;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(24, 88, 88);
 
 
 }
 
 .nav-ul_top li a:hover {
     font-size: 2rem;
-    border-bottom: 3px solid #e1e4e9;
+    border-bottom: 3px solid #323928;
 }
 
 .intro {
@@ -96,6 +101,8 @@
     padding-left: 10%;
     color: rgb(24, 88, 88);
     transition: all 5s;
+    font-family: monospace;
+    transition: all 5s;
 }
 
 .name:hover {
@@ -105,10 +112,11 @@
 
 .intro-text {
     align-self: end;
+    color: rgb(24, 88, 88);
+    font-family: monospace;
     font-size: 40px;
     grid-column: 2 / 3;
     margin: 4% 15% 5% 0;
-    color: rgb(24, 88, 88);
 }
 
 .img-intro {
@@ -118,12 +126,13 @@
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     width: 244px;
-    height: 344px;
+    height: 280px;
     align-self: flex-end;
     justify-self: center;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: inset 0 0 5px 2px #282a2d;
     align-self: center;
+    padding-top: 16px;
 }
 
 .about {
@@ -135,6 +144,7 @@
     color: #f5f5f5;
     padding-left: 4%;
     padding-bottom: 2rem;
+    font-family: monospace;
 }
 
 .about p {
@@ -142,6 +152,7 @@
     line-height: 3ch;
     padding: 8px 4rem 0 3rem;
     margin-top: 40px;
+    font-family: monospace, serif;
 
 }
 
@@ -178,6 +189,7 @@
     font-size: 3rem;
     padding-top: 2%;
     text-align: center;
+    font-family: monospace;
 }
 
 .experience {
@@ -222,7 +234,7 @@
 
 .title-light {
     color: #f5f5f5;
-    font-family: 'Roboto', sans-serif;
+   font-family: monospace;
     font-size: 3rem;
     padding-top: 2%;
     text-align: center;
