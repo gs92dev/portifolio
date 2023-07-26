@@ -1,14 +1,11 @@
-* {
+:root {
+    --light-bg-color: rgba(217, 234, 233, 0.7);
+    --font-green: color: rgb(24, 88, 88);
     box-sizing: border-box;
     font-size: 16px;
     margin: 0;
     padding: 0;
     font-family: monospace;
-}
-
-:root {
-    --light-bg-color: rgba(217, 234, 233, 0.7);
-    --font-green: color: rgb(24, 88, 88);
 }
 
 .nav-left {
