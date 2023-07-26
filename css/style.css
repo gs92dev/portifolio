@@ -114,9 +114,9 @@
     align-self: end;
     color: rgb(24, 88, 88);
     font-family: monospace;
-    font-size: 40px;
+    font-size: 45px;
     grid-column: 2 / 3;
-    margin: 4% 15% 5% 0;
+    margin: 5% 15% 5% 0;
 }
 
 .img-intro {
@@ -148,7 +148,7 @@
 }
 
 .about p {
-    font-size: 20px;
+    font-size: 26px;
     line-height: 3ch;
     padding: 8px 4rem 0 3rem;
     margin-top: 40px;
