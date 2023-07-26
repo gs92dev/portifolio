@@ -1,11 +1,14 @@
-:root {
-    --light-bg-color: rgba(217, 234, 233, 0.7);
-    --font-green: color: rgb(24, 88, 88);
+* {
     box-sizing: border-box;
     font-size: 16px;
     margin: 0;
     padding: 0;
     font-family: monospace;
+}
+
+:root {
+    --light-bg-color: rgba(217, 234, 233, 0.7);
+    --font-green: color: rgb(24, 88, 88);
 }
 
 .nav-left {
@@ -310,8 +313,10 @@ li {
 .cards {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    padding-top: 3%;
+    width: 80%;
+    padding: 10px 10px 0 10px;
+    background-color: rgb(24, 88, 88);
+    margin: 16px 16px 16px 30px;
 }
 
 iframe {
@@ -321,28 +326,28 @@ iframe {
 }
 
 .link-card {
-    background-color: #B9EDDD;
+    background-color: rgb(24, 88, 88);
     display: flex;
     justify-content: space-around;
-    padding: 3% 2% 2% 2%;
+    padding: 12px;
 
 }
 
 .link-card a {
 
-    background-color: #577D86;
+    background-color: #dfede9;
     border-radius: 2px;
-    color: rgb(250, 249, 249);
+    color: rgb(24, 88, 88);
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     transition: width 500ms;
-    width: 8ch;
+    width: 10ch;
     padding: 4px;
 }
 
 .link-card a:hover {
-    width: 10ch;
+    width: 12ch;
 
 }
 
@@ -538,6 +543,8 @@ footer {
 
     .cards {
         width: 100%;
+        margin: 8px 0 10px 0;
+        padding: 0;
     }
 
     iframe {
