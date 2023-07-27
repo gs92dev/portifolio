@@ -202,9 +202,8 @@
     padding-bottom: 5%
 }
 
-.experience-date {
-    margin: 16px;
-}
+
+
 
 .flex-row {
     display: flex;
@@ -212,25 +211,35 @@
     justify-content: space-evenly;
 }
 
+.experience-dates {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.experience-date {
+    margin: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.experience-year {
+    color: rgb(24, 88, 88);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 450;
+    width: fit-content;
+}
+
 .experiece-description {
-    width: 30%;
+    width: 35%;
 }
 
-.experience-container-odd {
-    display: flex;
-    flex-flow: row wrap;
-    ;
-    justify-content: space-between;
-    height: 25%;
+.emphasis {
+    background-color: #dfede9;
+    padding: 6px;
+    color: rgb(24, 88, 88);
+    height: fit-content;
 }
 
-.experience-container2 {
-    display: flex;
-    flex-flow: row wrap;
-    ;
-    justify-content: center;
-    height: 25%;
-}
 
 .title-light {
     color: #f5f5f5;
@@ -238,6 +247,13 @@
     font-size: 3rem;
     padding-top: 2%;
     text-align: center;
+}
+
+
+
+
+.none {
+    display: none;
 }
 
 .experience-card {
@@ -253,43 +269,6 @@
     width: 33%;
 }
 
-.emphasis {
-    background-color: #dfede9;
-    padding: 6px;
-    color: rgb(24, 88, 88);
-}
-
-.experience-date>p {
-    color: rgb(24, 88, 88);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 450;
-    width: fit-content;
-
-}
-
-.none {
-    display: none;
-}
-
-.second {
-    position: relative;
-    top: 50px;
-}
-
-.third {
-    position: relative;
-    top: 130px;
-}
-
-.fourth {
-    position: relative;
-    top: 180px;
-}
-
-.fifth {
-    position: relative;
-    top: 300px;
-}
 
 li {
     list-style: none;
@@ -511,29 +490,18 @@ footer {
         padding: 0;
     }
 
-    .experience-container1,
-    .experience-container2,
-    .experience-container3 {
+    .experience-date {
+        margin: 8px;
         display: flex;
         flex-direction: column;
-        padding: 10px;
-        width: 100%;
-    }
-
-    .experience-container1,
-    .experience-container3 {
-        gap: 15px;
-    }
-
-    .experience-card {
-
-        height: fit-content;
         justify-content: space-around;
-        line-height: 3ch;
-        padding: 5%;
-        width: 100%;
-
     }
+    .experiece-description {
+        width: 100%;
+        margin: 4px 0 4px 0;
+    }
+   
+    
 
     .container-card {
         width: 100%;
