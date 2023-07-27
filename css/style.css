@@ -216,6 +216,7 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
 .experience-date {
     margin: 8px;
     display: flex;
@@ -496,12 +497,14 @@ footer {
         flex-direction: column;
         justify-content: space-around;
     }
+
     .experiece-description {
         width: 100%;
         margin: 4px 0 4px 0;
+        font: 1.2em;
     }
-   
-    
+
+
 
     .container-card {
         width: 100%;
@@ -543,7 +546,7 @@ footer {
         /*align-self: end;*/
         color: rgb(24, 88, 88);
         font-family: monospace;
-        font-size: 30px;
+        font-size: 2em;
         grid-column: 2;
         /*margin: 4% 15% 5% 0;*/
         grid-row: 1;
